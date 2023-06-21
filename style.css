@@ -1,0 +1,200 @@
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+/*Reset specific elements*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body{
+    height:100%;
+    
+}
+
+body{
+      font-family:'Montserrat',sans-serif;
+      font-weight:500;
+      font-size:0.875rem;
+      max-width: 90rem;
+      background-color:hsl(30, 38%, 92%);
+      height:100%;
+}
+
+
+
+
+
+/*class selectors*/
+
+.flex-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100%;
+   
+    
+
+    
+}
+
+.flex-container > div{
+    width:270px;
+    height:410px;
+    background-color:  hsl(0, 0%, 100%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius:10px;
+}
+
+
+.flex-container >div >img{
+    width:270px;
+    height:410px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius:10px;
+   
+}
+.flex-container >div >div{
+    padding:2rem;
+}
+
+
+.perfume{
+    color:hsl(228, 12%, 48%);
+    letter-spacing: 0.3125rem;
+}
+
+
+.heading{
+    font-size:2rem;
+    font-family:'Fraunces', serif;
+    font-weight:700;
+}
+
+.para{
+    color:hsl(228, 12%, 48%);
+    font-family:'Montserrat', serif;
+    font-weight:500;
+    font-size:0.8rem;
+    letter-spacing: 0.05rem;
+}
+
+.price{
+    display:inline-block;
+}
+
+
+.real-price{
+    font-size:1.8rem;
+    font-weight:700;
+    font-family:'Fraunces', serif;
+    color:  hsl(158, 36%, 37%);
+}
+
+.first-price{
+    color:hsl(228, 12%, 48%);
+    text-decoration-line:line-through;
+    position:relative;
+    bottom:5px;
+    left:10px;
+    font-size:0.7rem;
+
+}
+
+.cart{
+    display:block;
+  
+}
+
+
+.cart >img{
+    width:20px;
+    height:20px;
+    filter: brightness(0) invert(1);
+    margin:5px 5px 0px 0px;
+    padding-top:5px;
+    
+} 
+
+
+.button{
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    width:210px;
+    height:40px;
+    border-radius:5px;
+    text-align: center;
+}
+
+
+.pad{
+    padding-top:15px;
+}
+
+.cart-margin{
+    margin-top:15px;
+}
+
+
+.attribution { 
+    font-size: 11px; 
+   
+    position:absolute;
+    top:570px;
+    left:480px;
+
+
+}
+
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+
+}
+
+
+/*Media queries*/
+/*instead using 375px width in mobile size, I have given 580px width in media query*/
+
+@media screen and (max-width:580px){
+    .flex-container{
+        flex-direction:column;
+    }
+    .flex-container >div >img{
+        height:260px;
+        width:350px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius:0px;
+        border-top-right-radius:10px;
+
+    }
+
+    .flex-container >div{
+        width:350px;
+        height:280px;
+        border-bottom-left-radius:10px;
+        border-top-right-radius:0px;
+        
+    }
+
+    .flex-container >div >div{
+        padding-top:0px;
+    }
+
+
+    .pad{
+        padding-top:10px;
+    }
+
+    .heading{
+        font-size:1.5rem;
+    }
+
+
+
+}
+
